@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4f5352;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(12px, 4vw, 20px);
+}
+
+.social-icon {
+    width: clamp(48px, 16vw, 60px);
+    height: clamp(48px, 16vw, 60px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon:hover {
+    transform: translateY(-10px) scale(1.15);
+    color: #fff;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.4);
+}
+
+.x-twitter:hover {
+    background-color: #1da1f2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.social-icon:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+.instagram:hover {
+    background-color: #e1306c;
+    box-shadow: 0 10px 20px rgba(228, 64, 95, 0.4);
+}
+
+.github:hover {
+    background-color: #333;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.4);
+}
